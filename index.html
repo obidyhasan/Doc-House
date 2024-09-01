@@ -1,128 +1,356 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <title>Doc House</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Daisy Ui & Tailwind CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- Font Box Icon CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
     <!-- font-family: "Source Sans 3", sans-serif; -->
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind Theme -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary_color: '#F7A582',
-                primary_light: '#F7A582',
-                secondary_color: '#07332F',
-              },
-            }
-          }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary_color: "#F7A582",
+              secondary_color: "#07332F",
+            },
+          },
+        },
+      };
     </script>
 
     <style>
-        .font-family{
-            font-family: "Source Sans 3", sans-serif;
-        }
+      .font-family {
+        font-family: "Source Sans 3", sans-serif;
+      }
     </style>
-
-</head>
-<body class="font-family">
-    
+  </head>
+  <body class="font-family">
     <!-- Header Section -->
-    <header class="bg-[url('./assets/banner.png')] bg-center bg-cover bg-no-repeat">
+    <header
+      class="bg-[url('./assets/banner.png')] bg-center bg-cover bg-no-repeat"
+    >
+      <!-- Navbar Section -->
+      <nav class="max-w-7xl mx-auto px-6 py-4">
+        <div class="navbar bg-transparent px-0 text-white">
+          <div class="navbar-start">
+            <a class="text-2xl flex items-center gap-2 font-semibold"
+              ><img class="w-10" src="./assets/logo.png" alt="" /><span
+                class="text-primary_color"
+                >Doc</span
+              >
+              House</a
+            >
+          </div>
 
-        <!-- Navbar Section -->
-        <nav class="max-w-7xl mx-auto px-6 py-4">
+          <div class="navbar-end hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li
+                class="hover:bg-primary_color transition-all duration-300 rounded"
+              >
+                <a class="text-base">Home</a>
+              </li>
+              <li
+                class="hover:bg-primary_color transition-all duration-300 rounded"
+              >
+                <a class="text-base">About</a>
+              </li>
+              <li
+                class="hover:bg-primary_color transition-all duration-300 rounded"
+              >
+                <a class="text-base">Appointment</a>
+              </li>
+              <li
+                class="hover:bg-primary_color transition-all duration-300 rounded"
+              >
+                <a class="text-base">Login</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="navbar bg-transparent px-0 text-white">
-               
-                <div class="navbar-start">
-                  <a class="text-2xl flex items-center gap-2 font-semibold"><img class="w-10" src="./assets/logo.png" alt=""><span class="text-primary_color">Doc</span> House</a>
-                </div>
-                
-                <div class="navbar-end hidden md:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Home</a></li>
-                    <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">About</a></li>
-                    <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Appointment</a></li>
-                    <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Login</a></li>
-                  </ul>
-                </div>
-
-
-                <div class="navbar-end md:hidden">
-                    <div class="dropdown dropdown-end">
-                        <div tabindex="0" role="button" class="md:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded z-[1] mt-3 w-52 p-2 shadow text-black">
-                        <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Home</a></li>
-                        <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">About</a></li>
-                        <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Appointment</a></li>
-                        <li class="hover:bg-primary_color transition-all duration-300 rounded"><a class="text-base">Login</a></li>
-                        </ul>
-                      </div>
-                </div>
-                
+          <div class="navbar-end md:hidden">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
               </div>
-
-        </nav>
-
-
-        <!-- Hero Section -->
-        <section class="max-w-7xl mx-auto px-6 text-center md:text-start text-white md:flex items-center pt-7 pb-20 md:pb-36 gap-10">
-
-            <div class="space-y-5">
-                <h1 class="sm:text-6xl text-5xl font-semibold max-w-xl mx-auto md:mx-0">Your Best Medical help Center</h1>
-                <p class="max-w-md text-gray-100 mx-auto md:mx-0">Lorem Ipsum is simply dummy text they are printing typesetting has been the industry’s stardard.</p>
-                <button class="btn px-7 bg-primary_color border-none rounded text-white">All Services</button>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded z-[1] mt-3 w-52 p-2 shadow text-black"
+              >
+                <li
+                  class="hover:bg-primary_color transition-all duration-300 rounded"
+                >
+                  <a class="text-base">Home</a>
+                </li>
+                <li
+                  class="hover:bg-primary_color transition-all duration-300 rounded"
+                >
+                  <a class="text-base">About</a>
+                </li>
+                <li
+                  class="hover:bg-primary_color transition-all duration-300 rounded"
+                >
+                  <a class="text-base">Appointment</a>
+                </li>
+                <li
+                  class="hover:bg-primary_color transition-all duration-300 rounded"
+                >
+                  <a class="text-base">Login</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </nav>
 
-            <div class="flex justify-center">
-                <img src="./assets/banner-img.png" alt="">
-            </div>
+      <!-- Hero Section -->
+      <section
+        class="max-w-7xl mx-auto px-6 text-center md:text-start text-white md:flex items-center pt-7 pb-20 md:pb-36 gap-10"
+      >
+        <div class="space-y-5 flex-1">
+          <h1
+            class="sm:text-6xl text-5xl font-semibold max-w-xl mx-auto md:mx-0"
+          >
+            Your Best Medical help Center
+          </h1>
+          <p class="max-w-md text-gray-100 mx-auto md:mx-0">
+            Lorem Ipsum is simply dummy text they are printing typesetting has
+            been the industry’s stardard.
+          </p>
+          <button
+            class="btn px-7 bg-primary_color border-none rounded text-white"
+          >
+            All Services
+          </button>
+        </div>
 
-        </section>
-
+        <div class="flex justify-center flex-1">
+          <img src="./assets/banner-img.png" alt="" />
+        </div>
+      </section>
     </header>
 
-</body>
+    <!-- Main Section -->
+    <main class="max-w-7xl mx-auto px-6">
+      <!-- Service Section -->
+      <section class="md:flex gap-5 my-10 md:my-24">
+        <div class="flex-1 flex items-center">
+          <img
+            class="w-full max-h-[700px] md:max-h-[960px] md:min-h-[900px] object-cover rounded-xl object-top"
+            src="./assets/doctor-img.png"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="flex-1 space-y-5 flex flex-col justify-center text-center md:text-start"
+        >
+          <h2 class="text-4xl font-bold md:mt-0 mt-7">Our Service</h2>
+          <p class="text-sm">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inve ntore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+
+          <div role="tablist" class="tabs tabs-lg grid grid-cols-3">
+            <input
+              type="radio"
+              name="my_tabs_1"
+              role="tab"
+              class="tab text-gray-800 font-semibold text-base checked:bg-primary_color"
+              aria-label="Cavity Protection"
+              checked="checked"
+            />
+            <div role="tabpanel" class="tab-content mt-12">
+              <img src="./assets/service-img.png" class="w-full" alt="" />
+              <h3 class="text-2xl font-bold mt-7 mb-6">
+                Electro Gastrology Therapy
+              </h3>
+              <p class="text-gray-600 font text-justify">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inve ntore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste
+                natus error
+              </p>
+              <p class="text-gray-600 font mt-5 text-justify">
+                Sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo.
+              </p>
+
+              <button
+                class="btn btn-outline text-primary_color rounded-md text-base mt-5"
+              >
+                More Details
+              </button>
+            </div>
+
+            <input
+              type="radio"
+              name="my_tabs_1"
+              role="tab"
+              class="tab text-gray-800 font-semibold text-base checked:bg-primary_color"
+              aria-label="Cosmetic Dentisty"
+            />
+            <div role="tabpanel" class="tab-content mt-12">
+              <img src="./assets/service-img.png" class="w-full" alt="" />
+              <h3 class="text-2xl font-bold mt-7 mb-6">
+                Electro Gastrology Therapy
+              </h3>
+              <p class="text-gray-600 font text-justify">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inve ntore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste
+                natus error
+              </p>
+              <p class="text-gray-600 font mt-5 text-justify">
+                Sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo.
+              </p>
+
+              <button
+                class="btn btn-outline text-primary_color rounded-md text-base mt-5"
+              >
+                More Details
+              </button>
+            </div>
+
+            <input
+              type="radio"
+              name="my_tabs_1"
+              role="tab"
+              class="tab text-gray-800 font-semibold text-base checked:bg-primary_color"
+              aria-label="Oral Surgery"
+            />
+            <div role="tabpanel" class="tab-content mt-12">
+              <img src="./assets/service-img.png" class="w-full" alt="" />
+              <h3 class="text-2xl font-bold mt-7 mb-6">
+                Electro Gastrology Therapy
+              </h3>
+              <p class="text-gray-600 font text-justify">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inve ntore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste
+                natus error
+              </p>
+              <p class="text-gray-600 font mt-5 text-justify">
+                Sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi
+                architecto beatae vitae dicta sunt explicabo.
+              </p>
+
+              <button
+                class="btn btn-outline text-primary_color rounded-md text-base mt-5"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div
+          class="flex p-8 bg-secondary_color text-white rounded-lg gap-5 hover:bg-primary_color"
+        >
+          <div>
+            <i class="fa-solid fa-clock text-3xl"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-xl">Opening Hours</h4>
+            <p class="text-gray-200 mt-2">Open 9.00 am to 5.00 pm Everyday</p>
+          </div>
+        </div>
+
+        <div
+          class="flex p-8 bg-secondary_color text-white rounded-lg gap-5 hover:bg-primary_color"
+        >
+          <div>
+            <i class="fa-solid fa-location-dot text-3xl"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-xl">Our Locations</h4>
+            <p class="text-gray-200 mt-2">
+              Dhanmondi 17, Dhaka - 1200, Bangladesh
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex p-8 bg-secondary_color text-white rounded-lg gap-5 hover:bg-primary_color"
+        >
+          <div>
+            <i class="fa-solid fa-phone text-3xl"></i>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-xl">Contact Us</h4>
+            <p class="text-gray-200 mt-2">
+              +88 01750 00 00 00 <br />+88 01750 00 00 00
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
